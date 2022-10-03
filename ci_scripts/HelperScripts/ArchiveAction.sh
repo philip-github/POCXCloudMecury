@@ -7,3 +7,4 @@
 #  
 
 echo "Running Archive Action Shell Script"
+brew install swiftlint
