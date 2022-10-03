@@ -24,6 +24,10 @@
 		D8BE59D228EA5EC000333E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8BE59D528EA5EC000333E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8BE59D728EA5EC000333E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8BE59DE28EA80E400333E7A /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		D8BE59E028EA810D00333E7A /* ArchiveAction.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ArchiveAction.sh; sourceTree = "<group>"; };
+		D8BE59E128EA812D00333E7A /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
+		D8BE59E228EA814000333E7A /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		D8BE59BD28EA5EBE00333E7A = {
 			isa = PBXGroup;
 			children = (
+				D8BE59DD28EA80CC00333E7A /* ci_scripts */,
 				D8BE59C828EA5EBE00333E7A /* POCXCloudMercury */,
 				D8BE59C728EA5EBE00333E7A /* Products */,
 			);
@@ -65,6 +70,25 @@
 				D8BE59D728EA5EC000333E7A /* Info.plist */,
 			);
 			path = POCXCloudMercury;
+			sourceTree = "<group>";
+		};
+		D8BE59DD28EA80CC00333E7A /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D8BE59DF28EA80ED00333E7A /* HelperScripts */,
+				D8BE59DE28EA80E400333E7A /* ci_post_clone.sh */,
+				D8BE59E128EA812D00333E7A /* ci_pre_xcodebuild.sh */,
+				D8BE59E228EA814000333E7A /* ci_post_xcodebuild.sh */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
+		D8BE59DF28EA80ED00333E7A /* HelperScripts */ = {
+			isa = PBXGroup;
+			children = (
+				D8BE59E028EA810D00333E7A /* ArchiveAction.sh */,
+			);
+			path = HelperScripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
