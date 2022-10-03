@@ -11,6 +11,7 @@ if [ "$CI_XCODEBUILD_ACTION" == "archive" ]
 then
     ./HelperScripts/ArchiveAction
 else
+    echo "Error [   ] build did not run as expected"
     exit 1
 fi
 
