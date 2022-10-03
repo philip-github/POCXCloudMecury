@@ -9,7 +9,7 @@ set -e
 
 if [ "$CI_XCODEBUILD_ACTION" == "archive" ]
 then
-    ./HelperScripts/ArchiveAction
+    ./HelperScripts/ArchiveAction.sh
 else
     echo "Error [   ] build did not run as expected"
     exit 1
